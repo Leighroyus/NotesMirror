@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field, PrivateAttr
 
 
 CONFIG_FILENAME = "config.json"
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DB_DIR = PROJECT_ROOT / "db"
 
 

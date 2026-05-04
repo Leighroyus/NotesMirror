@@ -58,6 +58,37 @@ notes doctor
 
 to verify the Linux machine can see the cache and the macOS machine can sync.
 
+### How This Works Across macOS and Linux
+
+The intended setup is:
+
+- On your Mac, run `NotesMirror` with `db_path` pointing at the Dropbox-synced `notes.duckdb` file.
+- On macOS, `notes sync` reads from Apple Notes and writes the latest data into that database.
+- On Linux, install another copy of `NotesMirror` and point its `db_path` at the same Dropbox-synced `notes.duckdb` file.
+- On Linux, you can query the synced cache, but you cannot sync from Apple Notes.
+
+In practice, that means:
+
+- macOS is the machine that updates the database from Apple Notes
+- Linux is the machine that reads from the already-synced database
+
+On Linux, these commands should work normally:
+
+- `notes status`
+- `notes list`
+- `notes get`
+- `notes search`
+- `notes notebooks`
+- `notes doctor`
+- `notes config`
+
+On Linux, `notes sync` is expected to fail because Apple Notes access depends on macOS automation support.
+
+Two practical points:
+
+- Let Dropbox fully sync `notes.duckdb` before running queries on Linux.
+- Avoid reading the database on Linux while the Mac is actively running a sync and Dropbox is still updating the file.
+
 ## Usage
 
 ```bash

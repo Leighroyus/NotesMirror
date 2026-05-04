@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "NotesMirror"
@@ -25,8 +25,8 @@ dev = [
 [project.scripts]
 notes = "NotesMirror.__main__:main"
 
-[tool.hatch.build.targets.wheel]
-packages = ["NotesMirror"]
+[tool.setuptools.packages.find]
+include = ["NotesMirror*"]
 
 [tool.ruff]
 line-length = 120
