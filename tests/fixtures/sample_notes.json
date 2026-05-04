@@ -1,0 +1,35 @@
+[
+    {
+        "id": "52F57A81-3E3F-4994-9337-A0E4B84B77A3",
+        "notebook_id": "B2C310D1-013F-7570-88B6-357F6A5C34B0",
+        "notebook_name": "Notes",
+        "title": "Sample Note One",
+        "content": "This is the content of sample note one.",
+        "content_type": "text",
+        "created": "2025-06-10T12:00:00+00:00",
+        "updated": "2025-06-10T14:30:00+00:00",
+        "is_archived": false
+    },
+    {
+        "id": "A8B7C6D5-E4F3-2109-8765-4321FEDCBA97",
+        "notebook_id": "B2C310D1-013F-7570-88B6-357F6A5C34B0",
+        "notebook_name": "Notes",
+        "title": "Shopping List",
+        "content": "Milk, Eggs, Bread, Coffee",
+        "content_type": "text",
+        "created": "2025-06-08T09:00:00+00:00",
+        "updated": "2025-06-09T11:00:00+00:00",
+        "is_archived": false
+    },
+    {
+        "id": "11223344-5566-7788-9900-AABBCCDDEEFF",
+        "notebook_id": "B2C310D1-013F-7570-88B6-357F6A5C34B0",
+        "notebook_name": "Notes",
+        "title": "Old Note",
+        "content": "Archived note content.",
+        "content_type": "text",
+        "created": "2024-01-01T00:00:00+00:00",
+        "updated": "2024-01-01T00:00:00+00:00",
+        "is_archived": true
+    }
+]
