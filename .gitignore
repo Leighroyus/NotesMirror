@@ -10,4 +10,5 @@ build/
 *.egg-info/
 /config*.json
 !/config.example.json
+NotesMirror/config*.json
 db/*.duckdb

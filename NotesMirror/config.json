@@ -1,8 +1,0 @@
-{
-  "db_path": "/Users/leigh/PycharmProjects/NotesMirror/NotesMirror/db/notes.duckdb",
-  "sync_interval_minutes": 5,
-  "sync_timeout_seconds": 600,
-  "auto_sync": true,
-  "stale_after_minutes": 30,
-  "dropbox_path": null
-}
